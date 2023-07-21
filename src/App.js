@@ -30,6 +30,8 @@ export default function App() {
     setAnimals([...animals, { id: uid(), ...newAnimal }]);
   }
 
+  // show new animal in console after adding
+
   useEffect(() => {
     console.log(animals);
   }, [animals]);
